@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1822.exe</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      font-family: Consolas, monospace;
+      font-size: 2em;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .main-text {
+      color: red;
+      position: relative;
+      z-index: 10;
+    }
+
+    .shadow-text {
+      color: red;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      opacity: 0.05;
+      font-size: inherit;
+    }
+
+    /* Each duplicate is slightly more to the right */
+    .shadow1 { left: 48%; opacity: 0.03; }
+    .shadow2 { left: 50%; opacity: 0.04; }
+    .shadow3 { left: 52%; opacity: 0.05; }
+    .shadow4 { left: 54%; opacity: 0.06; }
+    .shadow5 { left: 56%; opacity: 0.07; }
+  </style>
+</head>
+<body onclick="window.location.href='https://www.google.com'">
+  <!-- Shadow echoes -->
+  <div class="shadow-text shadow1">You shouldn't be here</div>
+  <div class="shadow-text shadow2">You shouldn't be here</div>
+  <div class="shadow-text shadow3">You shouldn't be here</div>
+  <div class="shadow-text shadow4">You shouldn't be here</div>
+  <div class="shadow-text shadow5">You shouldn't be here</div>
+
+  <!-- Main text -->
+  <div class="main-text">You shouldn't be here</div>
+</body>
+</html>
